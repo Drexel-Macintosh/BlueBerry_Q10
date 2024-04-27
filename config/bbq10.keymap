@@ -166,11 +166,11 @@
 
     	         	&kp C_PREV    			 &kp C_VOL_DN		      &kp C_PP			&kp C_VOL_UP		 &kp C_NEXT
 
-    &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	&mtt RBRC N3	&mtt LBKT LPAR	   &mtt RBKT RPAR	   &mtt LT UNDER	   &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
-    &mtt EQUAL STAR     &mtt N4	N4	   &mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	&mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     &kp BSPC
-    &to  0      	      &mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK  &mtt EXCL EXCL	   &mtt COMMA COMMA  &mtt DOT DOT	 &mtt PSCRN DLLR 	&kp ENTER
+    &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	   &mtt RBRC N3		   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER	&mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
+    &mtt EQUAL STAR        &mtt N4	N4	&mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    	&mtt APOS APOS	 &mtt DQT DQT           &kp BSPC
+    &to  0      	   &mtt N7 N7	   	&mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK     &mtt EXCL EXCL	   &mtt COMMA COMMA  	&mtt DOT DOT	 &mtt PRINTSCREEN DLLR 	&kp ENTER
 	
-    		         &SHFT				 &mtt LG(A) N0		      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &mtt LC(LCTRL) N0		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
 
             >;
@@ -183,9 +183,9 @@
 
     		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
 
-    &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG 	&none         	&none	           &none           &none      	   &none
-    &none   		&none	  	&none	 	   &none     	&none	          	   &none     	   &none	           &none         	&none      	   &none
-    &to  0  		&none    	&none    	&none      	&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC       &none           &bootloader    &none
+    &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG          &none         	&none	           &none           &none      	   &none
+    &none   		&none	  	&none	 	&none     	&none	          	   &none     	  	&none	           &none           &none      	   &none
+    &to  0  		&none    	&none    	&none      	&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
 
     		&to  0               		 &none	               	      &out OUT_TOG              &none                    &none
             >;
