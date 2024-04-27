@@ -153,7 +153,7 @@
     &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L     &kp BSPC
     &ALTL		&mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&mtt C_PP LG(N)  &kp ENTER
 
-    		         &SHFT				 &hm2 EP_TOG C_PWR	      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &hm2 EP_TOG LGUI(LCTRL(Q))	      &kp SPACE			&sk LCTRL		 &sk LGUI
 
             >;
         };
