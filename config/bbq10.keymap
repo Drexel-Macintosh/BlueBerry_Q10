@@ -168,9 +168,9 @@
 
     &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	   &mtt RBRC N3		   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER	&mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR        &mtt N4	N4	&mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    	&mtt APOS APOS	 &mtt DQT DQT           &kp BSPC
-    &to  0      	   &mtt N7 N7	   	&mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK     &mtt EXCL EXCL	   &mtt COMMA COMMA  	&mtt DOT DOT	 &mtt PRINTSCREEN DLLR 	&kp ENTER
+    &to  0      	   &mtt N7 N7	   	&mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK     &mtt EXCL EXCL	   &mtt COMMA COMMA  	&mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
 	
-    		         &SHFT				 &mtt LC(LCTRL) N0		      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &mtt N0 N0		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
 
             >;
