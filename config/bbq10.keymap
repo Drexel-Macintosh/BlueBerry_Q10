@@ -147,13 +147,13 @@
         */
                  		&to  0                                                                                	&MAN
 
-		            &mtt  K_CMENU TAB		 &kp LGUI		      &mkp LCLK			&mtt ESC K_BACK		 &mkp RCLK
+		            &mtt  K_CMENU TAB		 &sk GLOBE		      &mkp LCLK			&kp ESC			 &sk LALT
 
     &mtt LS(Q) Q	&mtt LS(W) W      &mtt LS(E) E	&mtt LS(R) R     &mtt LS(T) T	&mtt LS(Y) Y	&mtt LS(U) U	&mtt LS(I) I	&mtt LS(O) O	 &mtt LS(P) P
     &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L     &kp BSPC
-    &ALTL		   &mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&mtt C_PP LG(N)  &kp ENTER
+    &ALTL		&mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&mtt C_PP LG(N)  &kp ENTER
 
-    		         &SHFT				 &hm2 EP_TOG K_PWR	      &kp SPACE			&sk LALT		 &sk LCTRL
+    		         &SHFT				 &hm2 EP_TOG C_PWR	      &kp SPACE			&sk LCTRL		 &sk LGUI
 
             >;
         };
@@ -170,7 +170,7 @@
     &mtt EQUAL STAR     &mtt N4	N4	   &mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	&mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     &kp BSPC
     &to  0      	      &mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK  &mtt EXCL EXCL	   &mtt COMMA COMMA  &mtt DOT DOT	 &mtt PSCRN DLLR 	&kp ENTER
 	
-    		         &SHFT				 &mtt LG(A) N0		      &kp SPACE			&sk LALT		 &sk LCTRL
+    		         &SHFT				 &mtt LG(A) N0		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
 
             >;
