@@ -126,7 +126,7 @@
         };
     };
     
-    glb: mod_tap_tap {
+    glb: mod_tap_glo {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
