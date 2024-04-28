@@ -114,17 +114,6 @@
     };
   };
 
-        glo: globe_pseudo_mod {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp GLOBE>
-                , <&macro_param_1to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp GLOBE>
-                ;
-        };
-
     behaviors {
 	alt_to: behavior_alt_to {
             compatible = "zmk,behavior-hold-tap";
