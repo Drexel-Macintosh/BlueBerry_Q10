@@ -185,7 +185,7 @@ behaviors {
             bindings = <        
                 		&to  0                                                                            	 &to  0
 
-    	         	&kp C_PREV    			 &kp C_VOL_DN		      &kp C_PP			&kp C_VOL_UP		 &kp C_NEXT
+    	         	&kp C_PREV    			 &kp PG_DN		      &kp C_PP			&kp PG_UP		 &kp C_NEXT
 
     &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	   &mtt RBRC N3		   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER	&mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR        &mtt N4 N4		&mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    	&mtt APOS APOS	 &mtt DQT DQT           &kp BSPC
