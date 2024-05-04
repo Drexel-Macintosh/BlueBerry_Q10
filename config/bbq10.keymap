@@ -80,6 +80,13 @@
             bindings = <&sk LALT>, <&kp LALT>;
         };
 
+        ECTRL: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&sk LCTRL>, <&kp LC(SPACE)>;
+        };
+
 // Macro Behaviors
 
     tap: tap {
@@ -195,7 +202,7 @@
     &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L         &kp BSPC
     &ALTL		&mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&glb LG(SPACE) N     &kp ENTER
 
-    		         &SHFT				 &mtt LG(LC(Q)) LC(SPACE)	      &kp SPACE			&sk LCTRL		 &sk LGUI
+    		         &SHFT				 &mtt C_EJECT LG(LC(Q))	&kp SPACE			&sk ECTRL		 &sk LGUI
 
             >;
         };
@@ -206,7 +213,7 @@
             bindings = <        
                 		&to  0                                                                            	 &to  0
 
-    	         	&kp C_PREV    			 &kp PG_DN		      &kp C_PP			&kp PG_UP		 &kp C_NEXT
+    	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
 
     &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	   &mtt RBRC N3		   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER	&mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR        &mtt N4 N4		&mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    	&mtt APOS APOS	 &mtt DQT DQT           &kp BSPC
