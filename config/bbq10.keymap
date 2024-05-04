@@ -196,7 +196,7 @@
         */
                  		&to  0                                                                                	&MAN
 
-		            &mtt  K_CMENU TAB		 &sk GLOBE		      &mkp LCLK			&kp ESC			 &sk LALT
+		            &mtt  K_CMENU TAB		 &sk GLOBE		      &mkp LCLK			&mtt ESC LG(B)	 &sk LALT
 
     &mtt LS(Q) Q	&mtt LS(W) W      &mtt LS(E) E	&mtt LS(R) R     &mtt LS(T) T	&mtt LS(Y) Y	&mtt LS(U) U	&mtt LS(I) I	&mtt LS(O) O	     &mtt LS(P) P
     &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L         &kp BSPC
@@ -217,7 +217,7 @@
 
     &mtt TILDE HASH	   	&mtt HOME N1	   &mtt UP	N2	   &mtt END     N3	   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER     &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR		&mtt LEFT N4	   &mtt DOWN	N5	   &mtt RIGHT	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     	&mtt DEL BSPC
-    &to  0      	     	&mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt PSCRN DLLR 	&kp ENTER
+    &to  0      	     	&mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
 	
     		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
