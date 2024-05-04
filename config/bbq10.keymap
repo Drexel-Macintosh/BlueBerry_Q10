@@ -1,6 +1,6 @@
  /*
  * Copyright (c) 2023 ZitaoTech
- * "BlueBerry" Android Layout by Drexel Macintosh   
+ * "BlueBerry" Android Layout by Drexel Macintosh    
  * SPDX-License-Identifier: MIT
  */
 #include <behaviors.dtsi>
@@ -15,104 +15,79 @@
 #define UPPER 2
 #define MEDIA 3
 
-// Standard Behavior Configuration:
+// Standard Behavior Configurations:
+
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-};
+    };
+
 &sk{
     release-after-ms = <2500>;
-};
+    };
+
 &sl {
     release-after-ms = <2500>;
-};
+    };
 
 / {
+
+//Behaviors Start Here:
+
     behaviors {
+
+// Tap Dance Behaviors
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
-    };
-    behaviors {
+
         ALTL: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&sl ALT>, <&to ALT>;
         };
-    };
-    behaviors {
+
         SHFT: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings = <&sk LSHFT>, <&kp CLCK>;
         };
-    };
-    behaviors {
+
         MED: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings = <&sl MEDIA>, <&to MEDIA>;
         };
-    };
-    behaviors {
+
         MAN: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings = <&to 0>, <&to UPPER>;
         };
-    };
-    behaviors {
-	KPM: behavior_KPM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KPM";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <400>;
-            bindings = <&msc>, <&kp>;
-        };
-    };
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+
+        EALT: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&out &kp>;
+            bindings = <&sk LALT>, <&kp LALT>;
         };
-    };
-    behaviors {
-        hm2: homerow_mods_2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            bindings = <&ext_power &kp>;
-        };
-    };
-  behaviors {
+
+// Macro Behaviors
+
     tap: tap {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-    };
-    
-    mtt: mod_tap_tap {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      flavor = "tap-preferred";
-      tapping-term-ms = <200>;
-      quick-tap-ms = <125>;
-      require-prior-idle-ms = <125>;
-      bindings = <&tap>, <&tap>;
-    };
-  };
+   	 };
 
-behaviors {
         glo: globe_pseudo_mod {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -122,19 +97,52 @@ behaviors {
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_release &kp GLOBE>;
         };
-    };
 
-    glb: mod_tap_glo {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      flavor = "tap-preferred";
-      tapping-term-ms = <200>;
-      quick-tap-ms = <125>;
-      require-prior-idle-ms = <125>;
-      bindings = <&kp>, <&glo>;
-    };
+// Hold Tap Behaviors
 
-    behaviors {
+	KPM: behavior_KPM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KPM";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            bindings = <&msc>, <&kp>;
+        };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            bindings = <&out &kp>;
+        };
+
+        hm2: homerow_mods_2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            bindings = <&ext_power &kp>;
+        };
+
+  	mtt: mod_tap_tap {
+		compatible = "zmk,behavior-hold-tap";
+		#binding-cells = <2>;
+	     	flavor = "tap-preferred";
+	      	tapping-term-ms = <200>;
+	      	quick-tap-ms = <125>;
+	      	require-prior-idle-ms = <125>;
+	      	bindings = <&tap>, <&tap>;
+   	 };
+
+	msk: mod_Stick_Pre {
+	      compatible = "zmk,behavior-hold-tap";
+	      #binding-cells = <2>;
+	      flavor = "tap-preferred";
+	      tapping-term-ms = <200>;
+	      quick-tap-ms = <125>;
+	      require-prior-idle-ms = <125>;
+	      bindings = <&kp>, <&sk>;
+   	 };
+
 	alt_to: behavior_alt_to {
             compatible = "zmk,behavior-hold-tap";
             label = "alt_to";
@@ -143,7 +151,20 @@ behaviors {
             tapping-term-ms = <300>;
             bindings = <&kp>, <&to>;
         };
+
+	glb: mod_tap_glo {
+	      compatible = "zmk,behavior-hold-tap";
+	      #binding-cells = <2>;
+	      flavor = "tap-preferred";
+	      tapping-term-ms = <200>;
+	      quick-tap-ms = <125>;
+	      require-prior-idle-ms = <125>;
+	      bindings = <&kp>, <&glo>;
+	};
+
+//End Behvaiors here
     };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
