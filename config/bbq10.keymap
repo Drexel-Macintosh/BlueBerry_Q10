@@ -69,7 +69,7 @@
         MAN: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <350>;
             bindings = <&to 0>, <&to UPPER>;
         };
 
@@ -217,7 +217,7 @@
 
     &mtt TILDE HASH	   	&mtt HOME N1	   &mtt UP	N2	   &mtt END     N3	   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER     &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
     &mtt EQUAL STAR		&mtt LEFT N4	   &mtt DOWN	N5	   &mtt RIGHT	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     	&mtt DEL BSPC
-    &to  0      	     	&mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
+    &MAN	      	     	&mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt DLLR DLLR 	&kp ENTER
 	
     		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
