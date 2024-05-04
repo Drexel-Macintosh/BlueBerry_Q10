@@ -202,7 +202,7 @@
     &mtt LS(A) A	&mtt LS(S) S      &mtt LS(D) D	&mtt LS(F) F     &mtt LS(G) G	&mtt LS(H) H	&mtt LS(J) J	&mtt LS(K) K	&mtt LS(L) L         &kp BSPC
     &ALTL		&mtt LS(Z) Z      &mtt LS(X) X	&mtt LS(C) C     &mtt LS(V) V	&mtt LS(B) B	&mtt LS(N) N	&mtt LS(M) M	&glb LG(SPACE) N     &kp ENTER
 
-    		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE				&ECTRL			 &sk LGUI
+    		         &SHFT				 &mtt C_EJECT LG(LC(Q))		&kp SPACE		&ECTRL			 &sk LGUI
 
             >;
         };
@@ -215,9 +215,9 @@
 
     	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
 
-    &mtt TILDE HASH	   &mtt GRAVE N1	&mtt LBRC N2	   &mtt RBRC N3		   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER	&mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
-    &mtt EQUAL STAR        &mtt N4 N4		&mtt N5	N5	   &mtt N6	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    	&mtt APOS APOS	 &mtt DQT DQT           &kp BSPC
-    &to  0      	   &mtt N7 N7	   	&mtt N8	N8	   &mtt N9	N9	   &mtt QMARK QMARK     &mtt EXCL EXCL	   &mtt COMMA COMMA  	&mtt DOT DOT	 &mtt C_EJECT DLLR 	&kp ENTER
+    &mtt TILDE HASH	   	&mtt HOME N1	   &mtt UP	N2	   &mtt END     N3	   &mtt LBKT LPAR	&mtt RBKT RPAR	   &mtt LT UNDER     &mtt GT MINUS	 &mtt CARET PLUS	&mtt PERCENT AT
+    &mtt EQUAL STAR		&mtt LEFT N4	   &mtt DOWN	N5	   &mtt RIGHT	N6	   &mtt BSLH SLASH	&mtt PIPE COLON	   &mtt AMPS SEMI    &mtt APOS APOS	 &mtt DQT DQT     	&mtt DEL BSPC
+    &to  0      	     	&mtt N7 N7	   &mtt N8	N8	   &mtt N9	N9	   &mtt LBRC QMARK	&mtt RBRC EXCL	   &mtt GRAVE COMMA  &mtt DOT DOT	 &mtt PSCRN DLLR 	&kp ENTER
 	
     		         &SHFT				 &hm2 EP_TOG N0 		      &kp SPACE			&sk LCTRL		 &sk LGUI
 
@@ -247,9 +247,9 @@
  
     &none			&none			&none				&none				&none  
 
-    &none		&none     	&none    	&none  	  		&none			&none		&none    	&none	 	 &none		&kp DEL
-    &none	     	&none   	&none      	&none	 		&none		     	&none	      	&none       	&none       	 &none		&kp BSPC
-    &none     	 	&none     	&none     	&none    		&none	     		&none		&none       	&none       	 &none		&kp ENTER
+    &none		&none     	&none    	&none  	  		&none			&none		&none    	&none	 	 &none		&none
+    &none	     	&none   	&none      	&none	 		&none		     	&none	      	&none       	&none       	 &none		&none
+    &none     	 	&none     	&none     	&none    		&none	     		&none		&none       	&none       	 &none		&none
 	
     &none			&to  0			&none				&none				&none
             >;
