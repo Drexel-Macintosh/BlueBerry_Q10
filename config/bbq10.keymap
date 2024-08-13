@@ -1,7 +1,7 @@
  /*
  * Copyright (c) 2023 ZitaoTech
  * "BlueBerry" Android Layout by Drexel Macintosh    
- * SPDX-License-Identifier: MIT
+ * SPDX-License-Identifier: MIT 
  */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
